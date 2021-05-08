@@ -9,7 +9,7 @@ from sklearn.metrics import (accuracy_score,
                              precision_score,
                              recall_score)
 
-from src.entities.train_params import TrainingParams
+from work.entities.train_params import TrainingParams
 
 
 class ModelTrainer:

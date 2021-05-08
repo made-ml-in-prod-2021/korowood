@@ -9,10 +9,10 @@ import pandas as pd
 from sklearn.pipeline import Pipeline
 from sklearn.base import BaseEstimator
 
-from src.data.make_dataset import read_data
-from src.entities import ConfigPredParams, DataParams, FeatureParams
-from src.features.feature_builder import FeatureBuilder
-from src.utils import create_logger
+from work.data.make_dataset import read_data
+from work.entities import ConfigPredParams, DataParams, FeatureParams
+from work.features.feature_builder import FeatureBuilder
+from work.utils import create_logger
 
 
 def predict(logger: Logger, params: ConfigPredParams):

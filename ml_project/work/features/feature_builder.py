@@ -4,7 +4,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder
 
-from src.entities.feature_params import FeatureParams
+from work.entities.feature_params import FeatureParams
 from .outlier_transformer import Transformer
 from .nope_transformer import NopeTransformer
 
