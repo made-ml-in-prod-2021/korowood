@@ -4,7 +4,8 @@ from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder
 
-from work.entities.feature_params import FeatureParams
+
+from ..entities.feature_params import FeatureParams
 from .outlier_transformer import Transformer
 from .nope_transformer import NopeTransformer
 
@@ -91,7 +92,7 @@ class FeatureBuilder:
             params = params.transform_params
             return Pipeline(
                 [
-                    ('quantile', OutlierTransformer(cols=params.feats,
+                    ('quantile', Transformer(cols=params.feats,
                                                     quantile=params.quantile))
                 ]
             )

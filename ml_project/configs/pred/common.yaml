@@ -1,6 +1,6 @@
 # @package _group_
 data_params:
-  data_path: '../../data/heart.csv'
+  data_path: 'data/heart.csv'
   model_path: '../../models/model.pkl'
   preds_path: '../../../../out/preds/preds.csv'
 feature_params:

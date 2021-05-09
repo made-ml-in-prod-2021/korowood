@@ -4,7 +4,7 @@ import logging
 from logging import Logger
 import numpy as np
 
-from work.entities.logger_params import LoggerParams
+from .entities.logger_params import LoggerParams
 
 
 def create_logger(name: str, params: LoggerParams) -> Logger:

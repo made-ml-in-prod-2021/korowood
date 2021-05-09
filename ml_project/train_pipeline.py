@@ -255,7 +255,7 @@ def transform_valid_data(logger: Logger,
     return data_feats
 
 
-@hydra.main(config_path='../configs', config_name='config_train')
+@hydra.main(config_path=os.path.join('configs'), config_name='config_train')
 def main(params: ConfigTrainParams):
     """
     Pipeline entry point.

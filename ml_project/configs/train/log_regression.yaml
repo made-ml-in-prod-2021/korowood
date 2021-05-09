@@ -3,10 +3,10 @@ defaults:
   - common
 
 data_params:
-  data_path: '../../data/heart.csv'
-  model_path: '../../models/model.pkl'
-  metric_path: '../../models/metrics.json'
-  params_path: '../../models/params.json'
+  data_path: 'data/heart.csv'
+  model_path: 'models/model.pkl'
+  metric_path: 'models/metrics.json'
+  params_path: 'models/params.json'
   splitting_params:
     val_size: 0.2
     random_state: 9
