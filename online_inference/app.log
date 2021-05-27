@@ -1,0 +1,451 @@
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:uvicorn.error:Started server process [477277]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:src.app:Loading model...
+INFO:src.app:Model loaded.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://localhost:8000 (Press CTRL+C to quit)
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [477277]
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:uvicorn.error:Started server process [477502]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:src.app:Loading model...
+INFO:src.app:Model loaded.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://localhost:8000 (Press CTRL+C to quit)
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [477502]
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:uvicorn.error:Started server process [484477]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:src.app:Loading model...
+INFO:src.app:Model loaded.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://localhost:8000 (Press CTRL+C to quit)
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [484477]
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:uvicorn.error:Started server process [486328]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:src.app:Loading model...
+INFO:src.app:Model loaded.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://localhost:8000 (Press CTRL+C to quit)
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [486328]
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:uvicorn.error:Started server process [487527]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:src.app:Loading model...
+INFO:src.app:Model loaded.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://localhost:8000 (Press CTRL+C to quit)
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [487527]
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:uvicorn.error:Started server process [489175]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:src.app:Loading model...
+INFO:src.app:Model loaded.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://localhost:8000 (Press CTRL+C to quit)
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [489175]
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:uvicorn.error:Started server process [490918]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:src.app:Loading model...
+INFO:src.app:Model loaded.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://localhost:8000 (Press CTRL+C to quit)
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 396, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/fastapi/routing.py", line 150, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/dm/Документы/MADE/2 семетстр/korowood/online_inference/src/app.py", line 45, in predict
+    return get_predict(request.data, request.features)
+  File "/home/dm/Документы/MADE/2 семетстр/korowood/online_inference/src/app.py", line 53, in get_predict
+    predicts = model.predict(data)
+  File "/home/dm/.local/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 629, in predict
+    proba = self.predict_proba(X)
+  File "/home/dm/.local/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 673, in predict_proba
+    X = self._validate_X_predict(X)
+  File "/home/dm/.local/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 421, in _validate_X_predict
+    return self.estimators_[0]._validate_X_predict(X, check_input=True)
+  File "/home/dm/.local/lib/python3.8/site-packages/sklearn/tree/_classes.py", line 396, in _validate_X_predict
+    raise ValueError("Number of features of the model must "
+ValueError: Number of features of the model must match the input. Model n_features is 26 and input n_features is 13 
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [490918]
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:uvicorn.error:Started server process [497577]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:src.app:Loading model...
+INFO:src.app:Model loaded.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://localhost:8000 (Press CTRL+C to quit)
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 396, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/fastapi/routing.py", line 150, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/dm/Документы/MADE/2 семетстр/korowood/online_inference/src/app.py", line 45, in predict
+    return get_predict(request.data, request.features)
+  File "/home/dm/Документы/MADE/2 семетстр/korowood/online_inference/src/app.py", line 53, in get_predict
+    predicts = model.predict(data)
+  File "/home/dm/.local/lib/python3.8/site-packages/sklearn/svm/_base.py", line 615, in predict
+    y = super().predict(X)
+  File "/home/dm/.local/lib/python3.8/site-packages/sklearn/svm/_base.py", line 333, in predict
+    X = self._validate_for_predict(X)
+  File "/home/dm/.local/lib/python3.8/site-packages/sklearn/svm/_base.py", line 484, in _validate_for_predict
+    raise ValueError("X.shape[1] = %d should be equal to %d, "
+ValueError: X.shape[1] = 13 should be equal to 26, the number of features at training time
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [497577]
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:uvicorn.error:Started server process [502193]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:src.app:Loading model...
+ERROR:uvicorn.error:Traceback (most recent call last):
+  File "/home/dm/.local/lib/python3.8/site-packages/pandas/io/pickle.py", line 182, in read_pickle
+    return pickle.load(f)
+ModuleNotFoundError: No module named 'src.features'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/routing.py", line 540, in lifespan
+    async for item in self.lifespan_context(app):
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/routing.py", line 481, in default_lifespan
+    await self.startup()
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/routing.py", line 518, in startup
+    handler()
+  File "/home/dm/Документы/MADE/2 семетстр/korowood/online_inference/src/app.py", line 32, in load_model
+    model = pd.read_pickle(path)
+  File "/home/dm/.local/lib/python3.8/site-packages/pandas/io/pickle.py", line 187, in read_pickle
+    return pc.load(f, encoding=None)
+  File "/home/dm/.local/lib/python3.8/site-packages/pandas/compat/pickle_compat.py", line 249, in load
+    return up.load()
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/pickle.py", line 1212, in load
+    dispatch[key[0]](self)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/pickle.py", line 1528, in load_global
+    klass = self.find_class(module, name)
+  File "/home/dm/.local/lib/python3.8/site-packages/pandas/compat/pickle_compat.py", line 189, in find_class
+    return super().find_class(module, name)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/pickle.py", line 1579, in find_class
+    __import__(module, level=0)
+ModuleNotFoundError: No module named 'src.features'
+
+ERROR:uvicorn.error:Application startup failed. Exiting.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:uvicorn.error:Started server process [502262]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:src.app:Loading model...
+ERROR:uvicorn.error:Traceback (most recent call last):
+  File "/home/dm/.local/lib/python3.8/site-packages/pandas/io/pickle.py", line 182, in read_pickle
+    return pickle.load(f)
+ModuleNotFoundError: No module named 'src.features'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/routing.py", line 540, in lifespan
+    async for item in self.lifespan_context(app):
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/routing.py", line 481, in default_lifespan
+    await self.startup()
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/routing.py", line 518, in startup
+    handler()
+  File "/home/dm/Документы/MADE/2 семетстр/korowood/online_inference/src/app.py", line 32, in load_model
+    model = pd.read_pickle(path)
+  File "/home/dm/.local/lib/python3.8/site-packages/pandas/io/pickle.py", line 187, in read_pickle
+    return pc.load(f, encoding=None)
+  File "/home/dm/.local/lib/python3.8/site-packages/pandas/compat/pickle_compat.py", line 249, in load
+    return up.load()
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/pickle.py", line 1212, in load
+    dispatch[key[0]](self)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/pickle.py", line 1528, in load_global
+    klass = self.find_class(module, name)
+  File "/home/dm/.local/lib/python3.8/site-packages/pandas/compat/pickle_compat.py", line 189, in find_class
+    return super().find_class(module, name)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/pickle.py", line 1579, in find_class
+    __import__(module, level=0)
+ModuleNotFoundError: No module named 'src.features'
+
+ERROR:uvicorn.error:Application startup failed. Exiting.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:uvicorn.error:Started server process [502580]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:src.app:Loading model...
+ERROR:uvicorn.error:Traceback (most recent call last):
+  File "/home/dm/.local/lib/python3.8/site-packages/pandas/io/pickle.py", line 182, in read_pickle
+    return pickle.load(f)
+ModuleNotFoundError: No module named 'src.features'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/routing.py", line 540, in lifespan
+    async for item in self.lifespan_context(app):
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/routing.py", line 481, in default_lifespan
+    await self.startup()
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/routing.py", line 518, in startup
+    handler()
+  File "/home/dm/Документы/MADE/2 семетстр/korowood/online_inference/src/app.py", line 32, in load_model
+    model = pd.read_pickle(path)
+  File "/home/dm/.local/lib/python3.8/site-packages/pandas/io/pickle.py", line 187, in read_pickle
+    return pc.load(f, encoding=None)
+  File "/home/dm/.local/lib/python3.8/site-packages/pandas/compat/pickle_compat.py", line 249, in load
+    return up.load()
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/pickle.py", line 1212, in load
+    dispatch[key[0]](self)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/pickle.py", line 1528, in load_global
+    klass = self.find_class(module, name)
+  File "/home/dm/.local/lib/python3.8/site-packages/pandas/compat/pickle_compat.py", line 189, in find_class
+    return super().find_class(module, name)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/pickle.py", line 1579, in find_class
+    __import__(module, level=0)
+ModuleNotFoundError: No module named 'src.features'
+
+ERROR:uvicorn.error:Application startup failed. Exiting.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:uvicorn.error:Started server process [502974]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:src.app:Loading model...
+INFO:src.app:Model loaded.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://localhost:8000 (Press CTRL+C to quit)
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [502974]
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:uvicorn.error:Started server process [527586]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:src.app:Loading model...
+INFO:src.app:Model loaded.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://localhost:8000 (Press CTRL+C to quit)
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [527586]
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:uvicorn.error:Started server process [530020]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:src.app:Loading model...
+INFO:src.app:Model loaded.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://localhost:8000 (Press CTRL+C to quit)
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 396, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/fastapi/routing.py", line 150, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/dm/Документы/MADE/2 семетстр/korowood/online_inference/src/app.py", line 45, in predict
+    return get_predict(request.data, request.features)
+  File "/home/dm/Документы/MADE/2 семетстр/korowood/online_inference/src/app.py", line 53, in get_predict
+    predicts = model.predict(data)
+  File "/home/dm/.local/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 629, in predict
+    proba = self.predict_proba(X)
+  File "/home/dm/.local/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 673, in predict_proba
+    X = self._validate_X_predict(X)
+  File "/home/dm/.local/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 421, in _validate_X_predict
+    return self.estimators_[0]._validate_X_predict(X, check_input=True)
+  File "/home/dm/.local/lib/python3.8/site-packages/sklearn/tree/_classes.py", line 396, in _validate_X_predict
+    raise ValueError("Number of features of the model must "
+ValueError: Number of features of the model must match the input. Model n_features is 23 and input n_features is 13 
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [530020]
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:uvicorn.error:Started server process [531109]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:src.app:Loading model...
+INFO:src.app:Model loaded.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://localhost:8000 (Press CTRL+C to quit)
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 396, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/fastapi/routing.py", line 150, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/home/dm/anaconda3/envs/rapids-0.18/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/dm/Документы/MADE/2 семетстр/korowood/online_inference/src/app.py", line 45, in predict
+    return get_predict(request.data, request.features)
+  File "/home/dm/Документы/MADE/2 семетстр/korowood/online_inference/src/app.py", line 53, in get_predict
+    predicts = model.predict(data)
+  File "/home/dm/.local/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 629, in predict
+    proba = self.predict_proba(X)
+  File "/home/dm/.local/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 673, in predict_proba
+    X = self._validate_X_predict(X)
+  File "/home/dm/.local/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 421, in _validate_X_predict
+    return self.estimators_[0]._validate_X_predict(X, check_input=True)
+  File "/home/dm/.local/lib/python3.8/site-packages/sklearn/tree/_classes.py", line 396, in _validate_X_predict
+    raise ValueError("Number of features of the model must "
+ValueError: Number of features of the model must match the input. Model n_features is 23 and input n_features is 13 
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [531109]
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:uvicorn.error:Started server process [537475]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:src.app:Loading model...
+INFO:src.app:Model loaded.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://localhost:8000 (Press CTRL+C to quit)
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:uvicorn.error:Started server process [538255]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:src.app:Loading model...
+INFO:src.app:Model loaded.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://localhost:8000 (Press CTRL+C to quit)
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [538255]
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:uvicorn.error:Started server process [9706]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:src.app:Loading model...
+INFO:src.app:Model loaded.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://localhost:8000 (Press CTRL+C to quit)
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [9706]
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:uvicorn.error:Started server process [18963]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:src.app:Loading model...
+INFO:src.app:Model loaded.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://localhost:8000 (Press CTRL+C to quit)
